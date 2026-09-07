@@ -87,7 +87,13 @@ markdown_extensions:
 nav:
   - Home: index.md
   # - Welcome: welcome.md
-  - Lab:
+  - WxCC SCV Lab:
+    - Overview: overviewDK.md
+    - Prerequisites & Dependencies: preReqDK.md
+    - Integrate WxCC with Salesforce SCV: integrationTasksDK.md
+    - Validation & Testing: validTestDK.md
+    - Conclusion: conclusionDK.md
+  - Old Lab:
       - Overview: overview.md
       - Lab 1 - Getting Started: lab1_getting_started.md
       - Conclusion: conclusion.md
