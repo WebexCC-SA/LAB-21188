@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-This lab will give you an introduction to WxCC SCV integration
+This lab will give you an introduction to WxCC SCV integration and features
 
 ## Disclaimer
 
