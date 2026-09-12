@@ -111,8 +111,8 @@ Please use the following credentials to complete the tasks:
 
 ![Nav](./assets/task05_2.png){ width="800" }
 
-* Assign Contact Center Admin (Partner Telephony) Permission set.
-* For agents to have voice capability, assign  Contact Center Agent (Partner Telephony) and the Webex Contact Center SCV Agent permission set.
+* Assign Salesforce Voice Contact Center Admin (Partner Telephony) Permission set.
+* For agents to have voice capability, assign  Salesforce Voice Contact Center Agent (Partner Telephony) and the Webex Contact Center SCV Agent permission set.
 * Click Save button.  
 
 ![Nav](./assets/task05_3.png){ width="800" }
