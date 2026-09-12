@@ -10,8 +10,8 @@ Please use the following credentials to complete the tasks:
 | `Salesforce`            | https://login.salesforce.com    |
 | `WxCC Username`         | labuser**X**@clus26.wbx.ai (where **X** is your assigned pod number. For example: labuser**5**@clus26.wbx.ai if assigned pod **5**)    |
 | `WxCC Password`         | Clus2026!                       |
-| `Salesforce Username`   | labuser**X**@clus26.wbx.ai      |
-| `Salesforce Password`   | Clus2026!                       |
+| `Salesforce Username`   | Provided by the instructor      |
+| `Salesforce Password`   | Provided by the instructor      |
 
 ## Task 01
 
@@ -22,7 +22,7 @@ Please use the following credentials to complete the tasks:
 * Open a Chrome ingonito (private) window and login to Salesforce using pod credentials assigned (see table above)
 
 !!! Important
-    Please contact your proctor (via WIL Assistant) if prompted for a Salesforce verification code.
+    Please contact your proctor if prompted for a Salesforce verification code.
     
 * Click on the gear icon on top right corner and select Setup from the drop down menu.
 * From Setup Quick Find box, search and select **Company information**
