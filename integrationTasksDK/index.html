@@ -1,0 +1,1474 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center">
+      
+      
+        <meta name="author" content="John Doe">
+      
+      
+      
+        <link rel="prev" href="../preReqDK/">
+      
+      
+        <link rel="next" href="../validTestDK/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/webex75.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Integrate WxCC with Salesforce SCV - LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#integration-webex-contact-center-wxcc-with-salesforce-service-cloud-voice-svc" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" class="md-header__button md-logo" aria-label="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Integrate WxCC with Salesforce SCV
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overviewDK/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  WxCC SCV Lab
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" class="md-nav__button md-logo" aria-label="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WxCC SCV Lab
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WxCC SCV Lab
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overviewDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preReqDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prerequisites &amp; Dependencies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrate WxCC with Salesforce SCV
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrate WxCC with Salesforce SCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#lab-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lab Access:
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 01
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify-salesforce-voice-for-partner-telephony-licenses-entitlement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify Salesforce Voice for Partner Telephony Licenses Entitlement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 02
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 02">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-omni-channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable Omni-Channel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 03
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 03">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-salesforce-voice-turn-on-voice-with-partner-telephony" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable Salesforce Voice - Turn on Voice with Partner Telephony
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 04
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 04">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify-that-service-cloud-voice-package-is-installed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Verify that Service Cloud Voice Package is Installed
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 05
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-contact-center-permission-sets-for-scv-contact-center-useradmin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assign Contact Center Permission Sets for SCV Contact Center User/Admin
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 06
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 06">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-presence-statuses" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create Presence Statuses
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 07
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 07">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-presence-statuses-to-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assign Presence Status(es) to Agent(s)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 08
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-service-cloud-url-as-remote-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add Service Cloud URL as Remote Site
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-09" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 09
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 09">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-omni-channel-to-lightning-service-console-or-custom-lightening-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add Omni-Channel to Lightning Service Console (or Custom Lightening page)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 10
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 10">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#generate-public-key-certificate-for-contact-center-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Generate Public Key Certificate for Contact Center Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 11
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 11">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-contact-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Import Contact Center
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 12
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 12">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configure-contact-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configure Contact Center
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 13
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 13">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finalize-contact-center-configuration-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finalize Contact Center Configuration Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 14
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 14">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-users-to-the-contact-center" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assign user(s) to the Contact Center
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../validTestDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation &amp; Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusionDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="integration-webex-contact-center-wxcc-with-salesforce-service-cloud-voice-svc">Integration: Webex Contact Center (WxCC) with Salesforce Service Cloud Voice (SVC)</h1>
+<h2 id="lab-access">Lab Access:</h2>
+<p>Please use the following credentials to complete the tasks:</p>
+<table>
+<thead>
+<tr>
+<th><!-- --></th>
+<th><!-- --></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Webex Control Hub</code></td>
+<td>https://admin.webex.com</td>
+</tr>
+<tr>
+<td><code>Salesforce</code></td>
+<td>https://login.salesforce.com</td>
+</tr>
+<tr>
+<td><code>WxCC Username</code></td>
+<td>Provided by the instructor</td>
+</tr>
+<tr>
+<td><code>WxCC Password</code></td>
+<td>Provided by the instructor</td>
+</tr>
+<tr>
+<td><code>Salesforce Username</code></td>
+<td>Provided by the instructor</td>
+</tr>
+<tr>
+<td><code>Salesforce Password</code></td>
+<td>Provided by the instructor</td>
+</tr>
+</tbody>
+</table>
+<h2 id="task-01">Task 01</h2>
+<h3 id="verify-salesforce-voice-for-partner-telephony-licenses-entitlement"><code style="color : green"><strong>Verify Salesforce Voice for Partner Telephony Licenses Entitlement</strong></code></h3>
+<hr>
+<ul>
+<li>Open a Chrome ingonito (private) window and login to Salesforce using pod credentials assigned (see table above)</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please contact your proctor if prompted for a Salesforce verification code.</p>
+</div>
+<ul>
+<li>Click on the gear icon on top right corner and select Setup from the drop down menu.</li>
+<li>From Setup Quick Find box, search and select <strong>Company information</strong></li>
+<li>Scroll down to Permission Set License section and check for <strong>Salesforce Voice User (Partner Telephony)</strong>  </li>
+</ul>
+<!--  ![Nav](./assets/valid2_3.png){ width="400" } -->
+
+<!-- !<img width="500" height="800" alt="image" src="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task01_1.png"/> -->
+
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task01_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task01_1.png" width="300"></a></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task01_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task01_2.png" width="800"></a></p>
+<h2 id="task-02">Task 02</h2>
+<h3 id="enable-omni-channel"><code style="color : green"><strong>Enable Omni-Channel</strong></code></h3>
+<hr>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Review (Skip if Omni-Channel setting is already Enabled.)</p>
+</div>
+<ul>
+<li>From Setup Quick Find box, search and select <strong>Omni-Channel Settings</strong></li>
+<li>Move the slider to enable Enhanced Omni-Channel Routing.</li>
+<li>Select Enable Omni-Channel and Click Save.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task02_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task02_1.png" width="800"></a></p>
+<h2 id="task-03">Task 03</h2>
+<h3 id="enable-salesforce-voice-turn-on-voice-with-partner-telephony"><code style="color : green"><strong>Enable Salesforce Voice - Turn on Voice with Partner Telephony</strong></code></h3>
+<hr>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Review (Skip if already Enabled.)</p>
+</div>
+<ul>
+<li>From Setup Quick find box, search and select <strong>Partner Telephony Setup</strong> and toggle the button for Enable Service Cloud Voice.</li>
+<li>Scroll down to More Voice Settings section and make sure Respect Agent Capacity is Disabled or Off.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task03_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task03_1.png" width="800"></a></p>
+<h2 id="task-04">Task 04</h2>
+<h3 id="verify-that-service-cloud-voice-package-is-installed"><code style="color : green"><strong>Verify that Service Cloud Voice Package is Installed</strong></code></h3>
+<hr>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><em>Review only - SCV package for the WxCC is already isntalled. See below for installation information.</em></p>
+</div>
+<ul>
+<li>From Setup Quick find box, search and select <strong>installed Packages</strong></li>
+<li>Under Installed Packages verify that Webex Contact Center for Service Cloud Voice is listed.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task04_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task04_1.png" width="800"></a></p>
+<div class="admonition reference">
+<p class="admonition-title">Reference</p>
+<p><strong>How to install the Ciso WxCC for SCV package?</strong>  </p>
+<p><a href="https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000001HN1FIAW">Click this link</a> and follow onscreen instructions to install the package in your environment.<br>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task04_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task04_2.png" width="500"></a></p>
+<p>Note: <em>Grant access to 3rd party websites if prompted during installation</em></p>
+</div>
+<h2 id="task-05">Task 05</h2>
+<h3 id="assign-contact-center-permission-sets-for-scv-contact-center-useradmin"><code style="color : green"><strong>Assign Contact Center Permission Sets for SCV Contact Center User/Admin</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick find box, search and select <strong>Users</strong></li>
+<li>Click on your username in the list of users to open user details page.</li>
+<li>Scroll down to Permission Set Assignments and click Edit Assignments button.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task05_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task05_1.png" width="800"></a>  </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task05_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task05_2.png" width="800"></a></p>
+<ul>
+<li>Assign Salesforce Voice Contact Center Admin (Partner Telephony) Permission set.</li>
+<li>For agents to have voice capability, assign  Salesforce Voice Contact Center Agent (Partner Telephony) and the Webex Contact Center SCV Agent permission set.</li>
+<li>Click Save button.  </li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task05_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task05_3.png" width="800"></a></p>
+<h2 id="task-06">Task 06</h2>
+<h3 id="create-presence-statuses"><code style="color : green"><strong>Create Presence Statuses</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick find box, search and select <strong>Presence Statuses</strong></li>
+<li>Click on New button and create at least one status for Online and one for Busy - refer to screenshots below.</li>
+<li>Click Save button for both statuses.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task06_1.png" data-title="image" data-desc-position="top"><img width="800" height="500" alt="image" src="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task06_1.png"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task06_2.png" data-title="image" data-desc-position="top"><img width="800" height="500" alt="image" src="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task06_2.png"></a></p>
+<!--![Nav](./assets/task06_1.png){ width="300" } -->
+<!-- ![Nav](./assets/task06_2.png){ width="500" } -->
+
+<h2 id="task-07">Task 07</h2>
+<h3 id="assign-presence-statuses-to-agents"><code style="color : green"><strong>Assign Presence Status(es) to Agent(s)</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick find box, search and select <strong>Permission Sets</strong></li>
+<li>Locate and click on Partner Telephony Permission Set  </li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task07_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task07_1.png" width="800"></a></p>
+<ul>
+<li>Click Service Presence Statuses Access.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task07_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task07_2.png" width="800"></a></p>
+<ul>
+<li>Click Edit Button.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task07_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task07_3.png" width="800"></a></p>
+<ul>
+<li>In the Available Service Presences Statuses list, select the presence status(es) previously created and click Add to associate them with the permission set. Agents who are assigned to this permission set can sign into Omni-Channel with any of the presence statuses made available to them.</li>
+<li>Click the Save button.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task07_4.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task07_4.png" width="800"></a></p>
+<ul>
+<li>Click on Manage Assignments on the same page (screenshot above)</li>
+<li>Then click Add Assignment on the top right corner, select the desired user.</li>
+<li>Click Next, select an Expiration Option for the assigned users (Optional) and then click Assign and Done.  </li>
+</ul>
+<!-- !<img width="1000" height="800" alt="image" src="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task07_5_6.png"/> -->
+
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task07_5.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task07_5.png" width="600"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task07_6.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task07_6.png" width="600"></a></p>
+<!-- ![Nav](./assets/task07_5_6.png)  -->
+
+<h2 id="task-08">Task 08</h2>
+<h3 id="add-service-cloud-url-as-remote-site"><code style="color : green"><strong>Add Service Cloud URL as Remote Site</strong></code></h3>
+<hr>
+<div class="admonition reference">
+<p class="admonition-title">Reference</p>
+<p><strong>How to Find Your Instance ID?</strong>  </p>
+<p>After logging in, check the URL in your browser's address bar. 
+Your instance ID is the portion before any of these domains:  <code>.my.salesforce.com</code>   <code>.salesforce.com</code>  or <code>.lightning.force.com</code></p>
+<p>For example, if your URL is: https://<strong>orgfarm-5e30277a3a-dev-ed.develop</strong>.lightning.force.com/lightning/page/home  </p>
+<p>then <code style="color : Red">YOUR_INSTANCE_ID</code> is: <strong>orgfarm-5e30277a3a-dev-ed.develop</strong><br></p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task08_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task08_1.png"></a></p>
+<ul>
+<li>
+<p>Construct 3 URLs to add under Remote Site Setting using the following format:  </p>
+<p>https://<code style="color : Red">YOUR_INSTANCE_ID</code><strong>.my.salesforce-scrt.com</strong>  </p>
+<p>https://<code style="color : Red">YOUR_INSTANCE_ID</code><strong>--cisco-wxcc-scv.my.salesforce-scrt.com</strong>  </p>
+<p>https://webexapis.com  </p>
+</li>
+</ul>
+</div>
+<ul>
+<li>From Setup Quick find box, search and select <strong>Remote Site Settings</strong>  </li>
+<li>Click the New Remote Site button.</li>
+<li>Provide a Remote Site Name that is both descriptive and unique.</li>
+<li>In the Remote Site URL field, enter each URL identified earlier in the callout above, one at a time. Ensure that the Disable Protocol Security option is unchecked and the Active checkbox is selected.  Optionally, include a description for the remote site.</li>
+<li>Click Save to complete adding the remote site.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task08_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task08_2.png" width="800"></a></p>
+<ul>
+<li>After adding all the URLs, the list will appear similar to screensho below.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task08_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task08_3.png" width="800"></a></p>
+<h2 id="task-09">Task 09</h2>
+<h3 id="add-omni-channel-to-lightning-service-console-or-custom-lightening-page"><code style="color : green"><strong>Add Omni-Channel to Lightning Service Console (or Custom Lightening page)</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick find box, search and select <strong>App Manager</strong></li>
+<li>Click the dropdown next to the Service Console app (or other desired app,)  click Edit.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task09_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task09_1.png"></a></p>
+<ul>
+<li>Under App Settings, click Utility Items (Desktop Only).</li>
+<li>Click Add Utility Item.</li>
+<li>In the modal window, search for Omni-Channel.</li>
+<li>Click Omni-Channel.</li>
+<li>Click Save and exit the App Manager.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task09_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task09_2.png" width="800"></a></p>
+<h2 id="task-10">Task 10</h2>
+<h3 id="generate-public-key-certificate-for-contact-center-configuration"><code style="color : green"><strong>Generate Public Key Certificate for Contact Center Configuration</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick find box, search and select <strong>Certificate and Key Management</strong></li>
+<li>Click on Create Self-Signed Certificate button</li>
+<li>Enter a descriptive Label for the certificate.</li>
+<li>Enter a Unique Name. or use the name that’s automatically populated based on the entered certificate label.</li>
+<li>Select a Key Size for your generated certificate and keys. Click Save.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task10_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task10_1.png" width="800"></a>  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>
+<p><code style="color : Yellow">Download Certificate with (<strong>.crt</strong> extension.)</code> It will be used later in Contact Center Configuration.  </p>
+</li>
+<li>
+<p><code style="color : Yellow">Make a note of the <strong>Unique Name.</strong></code> It will be used later in the Contact Center Configuration.  </p>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task10_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task10_2.png"></a></p>
+</div>
+<h2 id="task-11">Task 11</h2>
+<h3 id="import-contact-center"><code style="color : green"><strong>Import Contact Center</strong></code></h3>
+<hr>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>**How to download the Contact Center definition file?  </p>
+<p>Before proceeding download the <a href="https://github.com/webex/webex-contact-center-crm-connectors/blob/main/salesforce/servicecloudvoice/WxCCContactCenterSCV.xml">WxCC Definition File</a>  </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task11_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task11_1.png"></a></p>
+<p>Open and edit the downloaded WxCCContactCenterSCV.xml file to modify lines 4 and 5 as shown below and save it. </p>
+<p>Add <strong>LabUserX</strong> (<strong>X</strong> = assigned Pod#) to Display Name (Line 4) and InteralName (Line 5) fields. For example:<br>
+</p><div class="highlight"><pre><span></span><code>   &lt;item sortOrder="1" name="reqDisplayName" label="Display Name"&gt;Webex Contact Center LabUserX&lt;/item&gt;  
+
+   &lt;item sortOrder="0" name="reqInternalName" label="InternalName"&gt;WxCCContactCenterLabuserX&lt;/item&gt;
+</code></pre></div><p></p>
+</div>
+<ul>
+<li>From Setup Quick find box, search and select <strong>Partner Telephony Contact Centers</strong></li>
+<li>The list of the existing (if any) Contact Centers is displayed. Click on the New button on the right side of the page.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task11_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task11_2.png"></a></p>
+<ul>
+<li>Select Webex Contact Center as your telephony provider. Click Next.</li>
+<li>A file browser opens. Select the .xml file downloaded above. Click Open to import the file.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task11_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task11_3.png"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Verify that your Contact Center is shown in the Contact Centers list view. </p>
+<p>Open the contact center just created and <code style="color : Yellow">Note down the <strong>API Name</strong></code> to be used later.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task11_4.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task11_4.png"></a></p>
+</div>
+<h2 id="task-12">Task 12</h2>
+<h3 id="configure-contact-center"><code style="color : green"><strong>Configure Contact Center</strong></code></h3>
+<hr>
+<ul>
+<li>Click on the Contact Center Webex Contact Center created in the previous step.</li>
+<li>Click the Edit button on the top right side.</li>
+<li>Copy the content of the certificate downloaded in Task 10: <em>Generate Public Key Certificate for Contact Center Configuration</em> and paste it into the <strong>Public Key</strong> field of the contact center.</li>
+<li>Paste the Unique Name noted down in Task 10: <em>Generate Public Key Certificate for Contact Center Configuration</em> into the <strong>Certificate Unique Name</strong> field of the contact center (under Telephony Settings.)</li>
+<li>Scroll down and Click the Save button.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task12_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task12_1.png" width="800"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before proceeding with the telephony configuration, we must collect several key IDs:<br>
+- At least one Online (Ready e.g., Available) presence status ID from Salesforce.  </p>
+<ul>
+<li>
+<p>At least one Busy (Not Ready e.g., Not Ready) presence status ID from Salesforce.  </p>
+</li>
+<li>
+<p>At least one default Not Ready Reason (Idle Code e.g., Not Ready) from Cisco Control Hub.  </p>
+</li>
+</ul>
+<p>These IDs will be required for the Telephony Settings and Presence State Mapping.  </p>
+</div>
+<div class="admonition reference">
+<p class="admonition-title">Reference</p>
+<p><strong>How to Find Presence Status IDs in Salesforce</strong>  </p>
+<div class="highlight"><pre><span></span><code>- From Setup, Quick Find box  search and select Presence Statuses.  
+- Click the Online status you want to use (e.g., Available)  
+- Copy the Salesforce ID from the browser URL.
+</code></pre></div>
+<p>Example: If the URL contains address=%2F0N5dM000001WuuX, the ID is 0N5dM000001WuuX (remove %2F)  </p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task12_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task12_2.png"></a>  </p>
+<p><strong>Click the Busy status (e.g., Not Ready) and copy its ID similarly.</strong></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>How to Find the Default Cisco Not Ready Reason in Control Hub</strong>  </p>
+<ul>
+<li>Log into the <a href="https://admin.webex.com">Webex Control Hub</a></li>
+<li>Navigate to Contact Center &gt; DESKTOP EXPERIENCE &gt; Idle/Wrap-up Codes</li>
+<li>Make sure that the Idle Codes are displayed, otherwise click the filter drop-down button and select Idle Code at the top of the page</li>
+<li>Click on an Idle Code to open the detail view. There you can find the Idle Code ID.</li>
+<li>The IDs can be copied and then used for the Presence State Mapping configuration. One of the IDs has to be used as the Default Cisco Not Ready Reason.  </li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task12_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task12_3.png"></a></p>
+</div>
+<div class="admonition reference">
+<p class="admonition-title">Reference</p>
+<p><strong>Presence State Mapping</strong>  </p>
+<p>Once you have collected:  </p>
+<ul>
+<li>
+<p>The Salesforce Online Presence Status ID  </p>
+</li>
+<li>
+<p>The Salesforce Busy Presence Status ID(s)  </p>
+</li>
+<li>
+<p>The Cisco Idle / Not Ready Reason Code ID  </p>
+</li>
+</ul>
+<p>You can configure Presence State Mapping to connect Salesforce Omni-Channel presence states with Cisco’s Ready and Not Ready codes.</p>
+<p>Mapping Format:  </p>
+<div class="highlight"><pre><span></span><code>    busyPresenceID1,ciscoAuxCodeID1;defaultNotReadyPresenceID,ciscoDefaultNotReadyAuxCodeID;onlinePresenceId,0
+</code></pre></div>
+<ul>
+<li>Separate multiple Busy mappings with semicolons.</li>
+<li>Each pair is formatted as:  SalesforcePresenceID, CiscoIdleCodeID</li>
+</ul>
+</div>
+<h2 id="task-13">Task 13</h2>
+<h3 id="finalize-contact-center-configuration-settings"><code style="color : green"><strong>Finalize Contact Center Configuration Settings</strong></code></h3>
+<hr>
+<ul>
+<li>Click on the Contact Center Webex Contact Center created in the previous step.</li>
+<li>Click the Edit button on the top right side.</li>
+<li>In the Telephony Settings section, paste the <strong>Ready State ID</strong>, <strong>Not Ready State Id</strong> and <strong>Default Cisco Not Ready Reason</strong> obtained from the callout steps above.</li>
+<li>Configure Presence State Mapping in the following format:</li>
+</ul>
+<p>SalesforcePresenceID, CiscoIdleCodeID</p>
+<p>Example:  <strong>0N5dM000001Wuw9,f3a6f360-8238-4b0d-86d7-579f40ca2b64;0N5dM000001WuuX,0</strong></p>
+<ul>
+<li>Set <strong>WCCAI Transcription</strong> and <strong>Save Recording Link</strong> to <code style="color : Red"><strong>true</strong></code> for transcription and recording playback from the Voice Call Record.</li>
+<li>Set <strong>WxCC Tenant</strong> to <code style="color : Red"><strong>us1</strong></code></li>
+<li>Set <strong>WxCC WebRTC Domain</strong> to <code style="color : Red"><strong>rtw.prod-us1.rtmsprod.net</strong></code></li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task13_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task13_1.png"></a></p>
+<h2 id="task-14">Task 14</h2>
+<h3 id="assign-users-to-the-contact-center"><code style="color : green"><strong>Assign user(s) to the Contact Center</strong></code></h3>
+<ul>
+<li>Click on the Contact Center Webex Contact Center created earlier</li>
+<li>Scroll down to Contact Center Users section and click on the Add button.</li>
+<li>Click on the + button next to the users that will have access to the open Contact Center and click Done</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/task14_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/task14_1.png"></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../preReqDK/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Prerequisites &amp; Dependencies">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Prerequisites &amp; Dependencies
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../validTestDK/" class="md-footer__link md-footer__link--next" aria-label="Next: Validation &amp; Testing">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Validation &amp; Testing
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../template_assets/js/newLoad.js"></script>
+      
+        <script src="../template_assets/js/setInfo.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
