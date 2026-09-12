@@ -253,9 +253,9 @@ Please use the following credentials to complete the tasks:
 
 !!! Note
 
-    * Download Certificate with (**.crt** extension.) It will be used later in Contact Center Configuration.  
+    * <code style="color : Yellow">Download Certificate with (**.crt** extension.)</code> It will be used later in Contact Center Configuration.  
     
-    * Make a note of the **Unique Name.** It will be used later in the Contact Center Configuration.  
+    * <code style="color : Yellow">Make a note of the **Unique Name.**</code> It will be used later in the Contact Center Configuration.  
     
     ![Nav](./assets/task10_2.png)
 
@@ -301,7 +301,7 @@ Please use the following credentials to complete the tasks:
 !!! Note
     
     Verify that your Contact Center is shown in the Contact Centers list view. 
-    Open the contact center just created and note down the API Name to be used later.
+    Open the contact center just created and <code style="color : Yellow">Note down the **API Name**</code> note down the API Name to be used later.
     ![Nav](./assets/task11_4.png)
 
 
