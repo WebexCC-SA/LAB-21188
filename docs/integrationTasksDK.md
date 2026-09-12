@@ -126,7 +126,7 @@ Please use the following credentials to complete the tasks:
 ---
 
 * From Setup Quick find box, search and select **Presence Statuses**
-* Click on New button and create at least one status for Online and one for Busy.
+* Click on New button and create at least one status for Online and one for Busy - refer to screenshots below.
 * Click Save button for both statuses.
 
 <img width="800" height="500" alt="image" src="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task06_1.png"/>
