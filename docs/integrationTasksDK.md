@@ -301,7 +301,8 @@ Please use the following credentials to complete the tasks:
 !!! Note
     
     Verify that your Contact Center is shown in the Contact Centers list view. 
-    Open the contact center just created and <code style="color : Yellow">Note down the **API Name**</code> note down the API Name to be used later.
+    
+    Open the contact center just created and <code style="color : Yellow">Note down the **API Name**</code> to be used later.
     ![Nav](./assets/task11_4.png)
 
 
