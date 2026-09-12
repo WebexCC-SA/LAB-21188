@@ -8,8 +8,8 @@ Please use the following credentials to complete the tasks:
 | ----------------------- | ------------------------------- |
 | `Webex Control Hub`     | https://admin.webex.com         |
 | `Salesforce`            | https://login.salesforce.com    |
-| `WxCC Username`         | labuser**X**@clus26.wbx.ai (where **X** is your assigned pod number. For example: labuser**5**@clus26.wbx.ai if assigned pod **5**)    |
-| `WxCC Password`         | Clus2026!                       |
+| `WxCC Username`         | Provided by the instructor      |
+| `WxCC Password`         | Provided by the instructor      |
 | `Salesforce Username`   | Provided by the instructor      |
 | `Salesforce Password`   | Provided by the instructor      |
 
@@ -26,7 +26,7 @@ Please use the following credentials to complete the tasks:
     
 * Click on the gear icon on top right corner and select Setup from the drop down menu.
 * From Setup Quick Find box, search and select **Company information**
-* Scroll down to Permission Set License section and check for **Service Cloud Voice User (Partner Telephony)**  
+* Scroll down to Permission Set License section and check for **Salesforce Voice User (Partner Telephony)**  
 
 <!--  ![Nav](./assets/valid2_3.png){ width="400" } -->
 
@@ -56,10 +56,14 @@ Please use the following credentials to complete the tasks:
 
 ## Task 03
 
-###<code style="color : green">**Enable Enable Service Cloud Voice**</code>
+###<code style="color : green">**Enable Salesforce Voice - Turn on Voice with Partner Telephony**</code>
 
 ---
 
+!!! Note
+    Review (Skip if already Enabled.)
+
+    
 * From Setup Quick find box, search and select **Partner Telephony Setup** and toggle the button for Enable Service Cloud Voice.
 * Scroll down to More Voice Settings section and make sure Respect Agent Capacity is Disabled or Off.
 
@@ -85,9 +89,10 @@ Please use the following credentials to complete the tasks:
 !!! Reference
     **How to install the Ciso WxCC for SCV package?**  
     
-    [Click this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl0000016zHxIAI) and follow onscreen instructions to install the package in your environment.  
+    [Click this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000001HN1FIAW) and follow onscreen instructions to install the package in your environment.  
     ![Nav](./assets/task04_2.png){ width="500" }
 
+    Note: _Grant access to 3rd party websites if prompted during installation_
 
 
 
