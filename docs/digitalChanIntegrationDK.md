@@ -19,8 +19,8 @@
 
 * Enter following details - see screenshot below 
 * **Basic Information**
-    - Routing Configuration Name
-    - Developer Name
+    - Routing Configuration Name (ex: SCVChat Routing Cfg)
+    - Developer Name (accept auto-populated or edit)
     - Ignore Overflow Assignee (User/Queue)
 * **Routing Settings**
     - Set Routing Priority (lower number = higher priority)
@@ -108,6 +108,62 @@
 * Click on Manage Assignments on the same page (screenshot above)
 * Then click Add Assignment on the top right corner, select the desired user.
 * Click Next, select an Expiration Option for the assigned users (Optional) and then click Assign and Done.  
+
+
+## Task 05
+
+###<code style="color : green">**Enable Digital Experiences**</code>
+
+---
+    
+* From Setup Quick Find box, search for **Digital Experiences** and click on **Settings** under it.
+* Click on checkbox to Enable Digital Experiences and Save.
+* Click the Save button.
+
+![Nav](./assets/digTask05_1.png){ width="800" }
+
+
+## Task 06
+
+###<code style="color : green">**Enable Digital Experiences**</code>
+
+---
+    
+* From Setup Quick Find box, search and select **Messaging Settings**
+* Move the slider to enable Messaging to ON.
+
+![Nav](./assets/digTask06_1.png){ width="800" }
+
+
+
+## Task 07
+
+###<code style="color : green">**Setup Messaging Channel**</code>
+
+---
+    
+* Click **New Channel** button - see screenshot for the previous step (Messaging Settings)
+* Click Start button
+* Select Enhanced Chat 
+* Enter following details for **Add a Channel**  - see screenshot below
+  - Channel Name (ex: SCV Chat)
+  - Developer Name - accept auto-populated or edit (ex: SCV_Chat)
+  - Select Deployment Type as **Web**
+  - Enter a dummy Domain for testing (ex: myscvchat.com)
+  - Click Next
+
+
+![Nav](./assets/digTask07_3.png){ width="800" }
+
+
+* Enter following details for **Channel Routing**  - see screenshot below
+  - Routing Type: Omni-Queue
+  - Associate the channel with the Queue created in Task 02 above: Create a Messaging Queue
+
+![Nav](./assets/digTask07_4.png){ width="800" }
+
+
+
 
 
 
