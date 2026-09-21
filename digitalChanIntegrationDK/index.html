@@ -1,0 +1,1218 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center">
+      
+      
+        <meta name="author" content="John Doe">
+      
+      
+      
+        <link rel="prev" href="../validTestDK/">
+      
+      
+        <link rel="next" href="../digitalTestDK/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../template_assets/webex75.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Digital Channel Configuration - LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#salesforce-digital-channel-configuration" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" class="md-header__button md-logo" aria-label="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Digital Channel Configuration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to dark mode" type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo" aria-label="Switch to light mode" type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"></path></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required="">
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overviewDK/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  WxCC SCV Lab
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" class="md-nav__button md-logo" aria-label="LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center" data-md-component="logo">
+      
+  <img src="../template_assets/webexLogo91.png" alt="logo">
+
+    </a>
+    LAB-21188: Supercharging Salesforce Service Cloud Voice with Webex Contact Center
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix="">
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked="">
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WxCC SCV Lab
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    WxCC SCV Lab
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix="">
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overviewDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../preReqDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prerequisites &amp; Dependencies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrationTasksDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Integrate WxCC with Salesforce SCV
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../validTestDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Validation &amp; Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Channel Configuration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digital Channel Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#task-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 01
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-routing-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create Routing Configurations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 02
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 02">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-messaging-queue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Messaging Queue
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 03
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 03">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-presence-status-for-messaging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Presence Status for Messaging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 04
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 04">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#assign-the-presence-status-to-the-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assign the Presence Status to the Agents
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 05
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 05">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-digital-experiences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable Digital Experiences
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 06
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 06">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-digital-experiences_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enable Digital Experiences
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 07
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 07">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup-messaging-channel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup Messaging Channel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-08" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task 08
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task 08">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-lightening-page-for-messaging-session-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Create a Lightening Page For “Messaging Session” Object
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digitalTestDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Test Chat Functionality
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conclusionDK/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="salesforce-digital-channel-configuration">Salesforce Digital Channel Configuration</h1>
+<h2 id="task-01">Task 01</h2>
+<h3 id="create-routing-configurations"><code style="color : green"><strong>Create Routing Configurations</strong></code></h3>
+<hr>
+<ul>
+<li>Use a browser window and <a href="https://login.salesforce.com/">login to Salesforce</a> using pod credentials assigned</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please contact your proctor if prompted for a Salesforce verification code.</p>
+</div>
+<ul>
+<li>Click on the gear icon on top right corner and select Setup from the drop down menu.</li>
+<li>From Setup Quick Find box, search and select <strong>Routing Configurations</strong></li>
+<li>Click on New button to create a new routing configuration.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask01_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask01_1.png" width="800"></a></p>
+<ul>
+<li>Enter following details - see screenshot below </li>
+<li><strong>Basic Information</strong><ul>
+<li>Routing Configuration Name (ex: SCVChat Routing Cfg)</li>
+<li>Developer Name (accept auto-populated or edit)</li>
+<li>Ignore Overflow Assignee (User/Queue)</li>
+</ul>
+</li>
+<li><strong>Routing Settings</strong><ul>
+<li>Set Routing Priority (lower number = higher priority)</li>
+<li>Select Routing Model (e.g., Most Available)</li>
+<li>Enter Push Time-Out (seconds) (e.g. 120 Seconds)</li>
+<li>Choose Capacity Type (Inherited or Dedicated)</li>
+</ul>
+</li>
+<li>
+<p><strong>Work Item Size</strong></p>
+<ul>
+<li>Enter Units of Capacity or Percentage of Capacity (only one)</li>
+</ul>
+</li>
+<li>
+<p>Click Save.</p>
+</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask01_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask01_2.png" width="1000"></a></p>
+<h2 id="task-02">Task 02</h2>
+<h3 id="create-a-messaging-queue"><code style="color : green"><strong>Create a Messaging Queue</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick Find box, search and select <strong>Queues</strong></li>
+<li>Click on the New button to create a new Queue.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask02_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask02_1.png" width="800"></a></p>
+<ul>
+<li>Enter following details - see screenshot below</li>
+<li><strong>Queue Name and Email Address</strong><ul>
+<li>Label (ex: SCVChatQueue)</li>
+<li>Queue Name (accept auto-populated or edit)</li>
+<li>Optional: Queue Email and Queue Description</li>
+</ul>
+</li>
+<li><strong>Configuration with Omni-Channel Routing</strong><ul>
+<li>Select Routing Configuration created in the previous Step. (ex: SCVChat Routing Cfg)</li>
+</ul>
+</li>
+<li><strong>Supported Objects</strong><ul>
+<li>Move Messaging Session from Available Objects to Selected Objects</li>
+</ul>
+</li>
+<li>
+<p><strong>Queue Members</strong></p>
+<ul>
+<li>Select member type (Users / Roles / Groups)</li>
+<li>Add your user(s) (ex: agents) to Selected Members</li>
+</ul>
+</li>
+<li>
+<p>Click Save.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask02_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask02_2.png" width="800"></a></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You don’t necessarily need to create a new Presence Status. You can modify an existing online presence status to add Messaging Channel. If you choose this approach, you can skip next two steps and jump to task 5.   </p>
+</div>
+<h2 id="task-03">Task 03</h2>
+<h3 id="create-a-presence-status-for-messaging"><code style="color : green"><strong>Create a Presence Status for Messaging</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick Find box, search and select <strong>Presence Statuses</strong> and click on New button.</li>
+<li>Enter following details - see screenshot below</li>
+<li><strong>Basic Information</strong><ul>
+<li>Status Name (ex: Available Chat and Voice)</li>
+<li>Developer Name (accept auto-populated or edit)</li>
+</ul>
+</li>
+<li><strong>Status Options</strong><ul>
+<li>Select Online (to allow agents to receive work)</li>
+</ul>
+</li>
+<li>
+<p><strong>Service Channels</strong></p>
+<ul>
+<li>From Available Channels, add Messaging (or both, Messaging and Phone)</li>
+</ul>
+</li>
+<li>
+<p>Click Save.
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask03_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask03_1.png" width="800"></a></p>
+</li>
+</ul>
+<h2 id="task-04">Task 04</h2>
+<h3 id="assign-the-presence-status-to-the-agents"><code style="color : green"><strong>Assign the Presence Status to the Agents</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick Find box, search and select <strong>Permission Sets</strong></li>
+<li>Click to open Partner Telephony Permission Set</li>
+<li>Click Service Presence Statuses Access</li>
+<li>Click Edit button</li>
+<li>In the Available Service Presences Statuses list, select the presence status(es) previously created and click Add to associate them with the permission set. Agents who are assigned to this permission set can sign into Omni-Channel with any of the presence statuses made available to them.</li>
+<li>Click the Save button.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask04_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask04_1.png" width="800"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Following steps are optional if not performed in the previous lab Task 07: Assign Presence Status(es) to Agent(s)</p>
+</div>
+<ul>
+<li>Click on Manage Assignments on the same page (screenshot above)</li>
+<li>Then click Add Assignment on the top right corner, select the desired user.</li>
+<li>Click Next, select an Expiration Option for the assigned users (Optional) and then click Assign and Done.  </li>
+</ul>
+<h2 id="task-05">Task 05</h2>
+<h3 id="enable-digital-experiences"><code style="color : green"><strong>Enable Digital Experiences</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick Find box, search for <strong>Digital Experiences</strong> and click on <strong>Settings</strong> under it.</li>
+<li>Click on checkbox to Enable Digital Experiences and Save.</li>
+<li>Click the Save button.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask05_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask05_1.png" width="800"></a></p>
+<h2 id="task-06">Task 06</h2>
+<h3 id="enable-digital-experiences_1"><code style="color : green"><strong>Enable Digital Experiences</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick Find box, search and select <strong>Messaging Settings</strong></li>
+<li>Move the slider to enable Messaging to ON.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask06_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask06_1.png" width="800"></a></p>
+<h2 id="task-07">Task 07</h2>
+<h3 id="setup-messaging-channel"><code style="color : green"><strong>Setup Messaging Channel</strong></code></h3>
+<hr>
+<ul>
+<li>Click <strong>New Channel</strong> button - see screenshot above for the previous step (Messaging Settings)</li>
+<li>Click Start button</li>
+<li>Select Enhanced Chat</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask07_1.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask07_1.png" width="800"></a>
+<a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask07_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask07_2.png" width="800"></a></p>
+<ul>
+<li>Enter following details for <strong>Add a Channel</strong>  - see screenshot below</li>
+<li>Channel Name (ex: SCV Chat)</li>
+<li>Developer Name - accept auto-populated or edit (ex: SCV_Chat)</li>
+<li>Select Deployment Type as <strong>Web</strong></li>
+<li>Enter a dummy Domain for testing (ex: myscvchat.com)</li>
+<li>Click Next</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask07_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask07_3.png" width="800"></a></p>
+<ul>
+<li>Enter following details for <strong>Channel Routing</strong>  - see screenshot below</li>
+<li>Routing Type: Omni-Queue</li>
+<li>Associate the channel with the Queue created in Task 02 above: Create a Messaging Queue</li>
+<li>Click Save</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask07_4.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask07_4.png" width="800"></a></p>
+<ul>
+<li>Accept Terms and Conditions and hit Save again</li>
+<li>Wait for Channel creation and deployment which may take a few minutes</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask07_6_7.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask07_6_7.png" width="800"></a></p>
+<h2 id="task-08">Task 08</h2>
+<h3 id="create-a-lightening-page-for-messaging-session-object"><code style="color : green"><strong>Create a Lightening Page For “Messaging Session” Object</strong></code></h3>
+<hr>
+<ul>
+<li>From Setup Quick Find box, search and select <strong>Object Manger</strong></li>
+<li>From Object Manager Quick Find box, search and select Messaging Session</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask08_1_2.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask08_1_2.png" width="800"></a></p>
+<ul>
+<li>From the left panel, select Lightning Record Pages</li>
+<li>Click New to create a new Lightning Record Page.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask08_3.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask08_3.png" width="800"></a></p>
+<ul>
+<li>
+<p>Select Record Page option and click Next.</p>
+</li>
+<li>
+<p>Enter following details for <strong>Create a new Lightning page</strong>  - see screenshot below</p>
+</li>
+<li>Label: (ex: SCV Messaging Session Record Page)</li>
+<li>Object: Messaging Session</li>
+<li>Click Next</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask08_4_5.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask08_4_5.png" width="800"></a></p>
+<ul>
+<li>Choose Page Template as <strong>Header and Right Sidebar</strong> and click Done</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask08_6.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask08_6.png" width="800"></a></p>
+<ul>
+<li>On the Lightning App Builder</li>
+<li>Enhanced Conversation from the left panel to the Center (Main) region</li>
+<li>Highlights Panel into the Header area</li>
+<li>Add Record Details and other required components to the Right Sidebar</li>
+<li>Click Save</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask08_7.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask08_7.png" width="800"></a></p>
+<ul>
+<li>Click Activate on Page Saved confirmation window.</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask08_9.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask08_9.png" width="800"></a></p>
+<ul>
+<li>Assign as Org Default and select Desktop and phone.</li>
+<li>Click Next</li>
+<li>Click Save</li>
+</ul>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../assets/digTask08_10_11_12.png" data-title="Nav" data-desc-position="top"><img alt="Nav" src="../assets/digTask08_10_11_12.png" width="800"></a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden="">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../validTestDK/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Validation &amp; Testing">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Validation &amp; Testing
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../digitalTestDK/" class="md-footer__link md-footer__link--next" aria-label="Next: Test Chat Functionality">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Test Chat Functionality
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Cisco
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.instant", "navigation.top", "navigation.footer", "search.suggest", "content.code.copy", "toc.integrate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../template_assets/js/newLoad.js"></script>
+      
+        <script src="../template_assets/js/setInfo.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": false, "openEffect": "fade", "closeEffect": "fade", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
