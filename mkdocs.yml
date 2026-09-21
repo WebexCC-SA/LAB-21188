@@ -93,6 +93,7 @@ nav:
       - Integrate WxCC with Salesforce SCV: integrationTasksDK.md
       - Validation & Testing: validTestDK.md
       - Digital Channel Configuration: digitalChanIntegrationDK.md
+      - Test Chat Functionality: digitalChanIntegrationDK.md
       - Conclusion: conclusionDK.md
 #  - Old Lab:
 #      - Overview: overview.md
