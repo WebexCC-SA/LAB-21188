@@ -142,9 +142,13 @@
 
 ---
     
-* Click **New Channel** button - see screenshot for the previous step (Messaging Settings)
+* Click **New Channel** button - see screenshot above for the previous step (Messaging Settings)
 * Click Start button
-* Select Enhanced Chat 
+* Select Enhanced Chat
+
+![Nav](./assets/digTask07_1.png){ width="800" }
+![Nav](./assets/digTask07_2.png){ width="800" }
+  
 * Enter following details for **Add a Channel**  - see screenshot below
   - Channel Name (ex: SCV Chat)
   - Developer Name - accept auto-populated or edit (ex: SCV_Chat)
@@ -152,15 +156,24 @@
   - Enter a dummy Domain for testing (ex: myscvchat.com)
   - Click Next
 
-
 ![Nav](./assets/digTask07_3.png){ width="800" }
 
 
 * Enter following details for **Channel Routing**  - see screenshot below
   - Routing Type: Omni-Queue
   - Associate the channel with the Queue created in Task 02 above: Create a Messaging Queue
+  - Click Save
 
 ![Nav](./assets/digTask07_4.png){ width="800" }
+
+  - Accept Terms and Conditions and hit Save again
+  - Wait for Channel creation and deployment which may take a few minutes
+
+![Nav](./assets/digTask07_6_7.png){ width="800" }
+
+
+
+
 
 
 
