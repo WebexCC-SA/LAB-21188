@@ -218,5 +218,5 @@
   - Click Next
   - Click Save
 
-![Nav](./assets/digTask08__10_11_12.png){ width="800" }
+![Nav](./assets/digTask08_10_11_12.png){ width="800" }
 
