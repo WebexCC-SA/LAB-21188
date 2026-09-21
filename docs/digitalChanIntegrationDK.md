@@ -172,8 +172,31 @@
 ![Nav](./assets/digTask07_6_7.png){ width="800" }
 
 
+## Task 08
 
+###<code style="color : green">**Create a Lightening Page For “Messaging Session” Object**</code>
 
+---
+    
+* From Setup Quick Find box, search and select **Object Manger**
+* In Object Manager, search for and select Messaging Session.
+
+From the left panel, select Lightning Record Pages.
+Click New to create a new Lightning Record Page.
+Select Record Page option and click Next.
+Enter Label (e.g. SCV Messaging Session Record Page).
+Select Object as Messaging Session.
+Click Next.
+Choose Page Template as Header and Right Sidebar.
+Click Done.
+Once the Lightning App Builder opens, drag Enhanced Conversation from the left panel to the Center (Main) region.
+Drag Highlights Panel into the Header area.
+Add Record Details and other required components to the Right Sidebar.
+Click Save.
+Click Activate.
+Assign as Org Default and select Desktop and phone.
+Click Next.
+Save
 
 
 
@@ -184,17 +207,13 @@
 
 ## Task 0X
 
-###<code style="color : green">**Enable Salesforce Voice - Turn on Voice with Partner Telephony**</code>
+###<code style="color : green">**Test Chat Functionality**</code>
 
 ---
 
 !!! Note
     Review (Skip if already Enabled.)
 
-    
-* From Setup Quick find box, search and select **Partner Telephony Setup** and toggle the button for Enable Service Cloud Voice.
-* Scroll down to More Voice Settings section and make sure Respect Agent Capacity is Disabled or Off.
 
-![Nav](./assets/task03_1.png){ width="800" }
 
 
