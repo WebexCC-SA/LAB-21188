@@ -76,7 +76,7 @@
 * From Setup Quick Find box, search and select **Presence Statuses** and click on New button.
 * Enter following details - see screenshot below
 * **Basic Information**
-    - Status Name (ex: Avilable Chat and Voice)
+    - Status Name (ex: Available Chat and Voice)
     - Developer Name (accept auto-populated or edit)
 * **Status Options**
     - Select Online (to allow agents to receive work)
@@ -220,25 +220,3 @@
 
 ![Nav](./assets/digTask08__10_11_12.png){ width="800" }
 
-
-## Task 09
-
-###<code style="color : green">**Test Chat Functionality**</code>
-
----
-
-* From the Setup Quick Find search box, type Messaging Settings and select it
-* Select the Channel created in previous Task 07: Setup Messaging Channel
-* Select Channel Name (ex: SCV_Chat) under Embedded Service Deployments
-* Scroll down and select Test Enhanced Web Chat
-
-![Nav](./assets/digTask09_1.png){ width="800" }
-
-* This opens a new Browser tab. Click on the Chat Bubble to initiate the chat
-
-![Nav](./assets/digTask09_2.png){ width="800" }
-
-* Login the agent and make it Available for Presence Status created in Step 43: Create a Presence Status for Messaging.
-* Agent should now receive the chat and should be able to answer from the Omni-Channel widget.
-
-![Nav](./assets/digTask09_3.png){ width="800" }
