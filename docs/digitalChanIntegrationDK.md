@@ -179,41 +179,65 @@
 ---
     
 * From Setup Quick Find box, search and select **Object Manger**
-* In Object Manager, search for and select Messaging Session.
+* From Object Manager Quick Find box, search and select Messaging Session
 
-From the left panel, select Lightning Record Pages.
-Click New to create a new Lightning Record Page.
-Select Record Page option and click Next.
-Enter Label (e.g. SCV Messaging Session Record Page).
-Select Object as Messaging Session.
-Click Next.
-Choose Page Template as Header and Right Sidebar.
-Click Done.
-Once the Lightning App Builder opens, drag Enhanced Conversation from the left panel to the Center (Main) region.
-Drag Highlights Panel into the Header area.
-Add Record Details and other required components to the Right Sidebar.
-Click Save.
-Click Activate.
-Assign as Org Default and select Desktop and phone.
-Click Next.
-Save
+![Nav](./assets/digTask08_1_2.png){ width="800" }
+
+* From the left panel, select Lightning Record Pages
+* Click New to create a new Lightning Record Page.
+
+![Nav](./assets/digTask08_3.png){ width="800" }
+
+* Select Record Page option and click Next.
+
+![Nav](./assets/digTask08_4.png){ width="800" }
 
 
+* Enter following details for **Create a new Lightning page**  - see screenshot below
+  - Label: (ex: SCV Messaging Session Record Page)
+  - Object: Messaging Session
+  - Click Next
+
+![Nav](./assets/digTask08_5.png){ width="800" }
+
+
+* Choose Page Template as Header and Right Sidebar and click Done
+
+![Nav](./assets/digTask08_6.png){ width="800" }
+
+
+* On the Lightning App Builder
+  - Enhanced Conversation from the left panel to the Center (Main) region.
+  - Highlights Panel into the Header area
+  - Add Record Details and other required components to the Right Sidebar
+  - Click Save
+  - Click Activate on Page Saved confirmation window.
+ 
+  - Assign as Org Default and select Desktop and phone.
+  - Click Next.
+  - Save
 
 
 
 
-
-
-## Task 0X
+## Task 09
 
 ###<code style="color : green">**Test Chat Functionality**</code>
 
 ---
 
-!!! Note
-    Review (Skip if already Enabled.)
+* From the Setup Quick Find search box, type Messaging Settings and select it
+* Select the Channel created in previous Task 07: Setup Messaging Channel
+* Select Channel Name (ex: SCV_Chat) under Embedded Service Deployments
+* Scroll down and select Test Enhanced Web Chat
 
+![Nav](./assets/digTask09_1.png){ width="800" }
 
+* This opens a new Browser tab. Click on the Chat Bubble to initiate the chat
 
+![Nav](./assets/digTask09_2.png){ width="800" }
 
+* Login the agent and make it Available for Presence Status created in Step 43: Create a Presence Status for Messaging.
+* Agent should now receive the chat and should be able to answer from the Omni-Channel widget.
+
+![Nav](./assets/digTask09_3.png){ width="800" }
