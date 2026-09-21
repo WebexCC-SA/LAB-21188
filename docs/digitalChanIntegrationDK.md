@@ -203,17 +203,22 @@
 
 
 * On the Lightning App Builder
-  - Enhanced Conversation from the left panel to the Center (Main) region.
+  - Enhanced Conversation from the left panel to the Center (Main) region
   - Highlights Panel into the Header area
   - Add Record Details and other required components to the Right Sidebar
   - Click Save
-  - Click Activate on Page Saved confirmation window.
  
+![Nav](./assets/digTask08_7.png){ width="800" }
+
+  - Click Activate on Page Saved confirmation window.
+
+![Nav](./assets/digTask08_9.png){ width="800" }
+
   - Assign as Org Default and select Desktop and phone.
-  - Click Next.
-  - Save
+  - Click Next
+  - Click Save
 
-
+![Nav](./assets/digTask08__10_11_12.png){ width="800" }
 
 
 ## Task 09
