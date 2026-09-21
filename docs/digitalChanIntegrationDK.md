@@ -190,18 +190,14 @@
 
 * Select Record Page option and click Next.
 
-![Nav](./assets/digTask08_4.png){ width="800" }
-
-
 * Enter following details for **Create a new Lightning page**  - see screenshot below
   - Label: (ex: SCV Messaging Session Record Page)
   - Object: Messaging Session
   - Click Next
 
-![Nav](./assets/digTask08_5.png){ width="800" }
+![Nav](./assets/digTask08_4_5.png){ width="800" }
 
-
-* Choose Page Template as Header and Right Sidebar and click Done
+* Choose Page Template as **Header and Right Sidebar** and click Done
 
 ![Nav](./assets/digTask08_6.png){ width="800" }
 
