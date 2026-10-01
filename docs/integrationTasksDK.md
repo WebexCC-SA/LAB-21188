@@ -1,17 +1,6 @@
 # Integration: Webex Contact Center (WxCC) with Salesforce Service Cloud Voice (SVC)
 
-## Lab Access:
-Please use the following credentials to complete the tasks:
 
-
-| <!-- -->                | <!-- -->                        |
-| ----------------------- | ------------------------------- |
-| `Webex Control Hub`     | https://admin.webex.com         |
-| `Salesforce`            | https://login.salesforce.com    |
-| `WxCC Username`         | Provided by the instructor      |
-| `WxCC Password`         | Provided by the instructor      |
-| `Salesforce Username`   | Provided by the instructor      |
-| `Salesforce Password`   | Provided by the instructor      |
 
 ## Task 01
 
