@@ -2,21 +2,18 @@
 
 
 
+| Tenant            |  URL                            |
+| :---------------: | :-----------------------------: | 
+| Webex Control Hub    | https://admin.webex.com      |
+| Salesforce          | https://login.salesforce.com  |
 
-| `Webex Control Hub`     | https://admin.webex.com                 |
-| `Salesforce`            | https://login.salesforce.com            |
 
-| Pod#              |  PSTN Number            | Agent username           |  Agent Password  |
-| :---------------: | :---------------------: | :----------------------: | :--------------: |
-| 01                |   978-339-7153          | labuser1@clus26.wbx.ai   | Clus2026!        |
-| 02                |   978-339-7154          | labuser2@clus26.wbx.ai   | Clus2026!        |
-| 03                |   978-339-7155          | labuser3@clus26.wbx.ai   | Clus2026!        |
 
 Please use the following Admin credentials to access your assigned WxCC and Salesforce instances:
 
 
 
-| ` Pod#`.  |  `WxCC  Username`     | `WxCC Password` |  `Salesforce Username`                        | `Salesforce Password` |
+| `Pod#`    |  `WxCC  Username`     | `WxCC Password` |  `Salesforce Username`                        | `Salesforce Password` |
 | :-------: | :-------------------------------------: | :-----------------------: | :--------------------: | :-----------------------------: |
 | 1         |   user1@wx1-2026.wbx.ai      |   Webex1One!        |  rattylab+01.65b2327c2e4f@agentforce.com     | Webex1One                  |
 | 2         |   user2@wx1-2026.wbx.ai      |   Webex1One!        |  rattylab+01.65b2327c2e4f@agentforce.com     | Webex1One                  | 
