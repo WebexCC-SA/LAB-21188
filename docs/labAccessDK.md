@@ -1,7 +1,9 @@
 # Lab Access
 
-| `Webex Control Hub`     | https://admin.webex.com         |
-| `Salesforce`            | https://login.salesforce.com    |
+
+| :---------------------: | :-------------------------------------: |
+| `Webex Control Hub`     | https://admin.webex.com                 |
+| `Salesforce`            | https://login.salesforce.com            |
 
 Please use the following Admin credentials to access your assigned WxCC and Salesforce instances:
 
