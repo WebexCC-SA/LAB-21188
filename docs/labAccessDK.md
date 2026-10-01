@@ -2,10 +2,10 @@
 
 
 
-| Tenant            |  URL                            |
-| :---------------: | :-----------------------------: | 
-| Webex Control Hub    | https://admin.webex.com      |
-| Salesforce          | https://login.salesforce.com  |
+| Tenant                |  URL                                                          |
+| :-------------------: | :-----------------------------------------------------------: | 
+| **Webex Control Hub** | [https://admin.webex.com](https://admin.webex.com)            |
+| **Salesforce**        | [https://login.salesforce.com](https://login.salesforce.com)  |
 
 
 
