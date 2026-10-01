@@ -1,11 +1,14 @@
 # Lab Access
 
-Please use the following admin credentials to access your assigned WxCC and Salesforce instances:
+| `Webex Control Hub`     | https://admin.webex.com         |
+| `Salesforce`            | https://login.salesforce.com    |
+
+Please use the following Admin credentials to access your assigned WxCC and Salesforce instances:
 
 
 
-| ` Pod#`|  `WxCC Admin Username`     | `WxCC Password` |  `Salesforce Username`                                      | `Salesforce Password` |
-| :-------: | :-------------------------------------: | :-----------------------: | :-------------------------------------------------------------: | :-----------------------------: |
+| ` Pod#`.  |  `WxCC  Username`     | `WxCC Password` |  `Salesforce Username`                        | `Salesforce Password` |
+| :-------: | :-------------------------------------: | :-----------------------: | :--------------------: | :-----------------------------: |
 | 1         |   user1@wx1-2026.wbx.ai      |   Webex1One!        |  rattylab+01.65b2327c2e4f@agentforce.com     | Webex1One                  |
 | 2         |   user2@wx1-2026.wbx.ai      |   Webex1One!        |  rattylab+01.65b2327c2e4f@agentforce.com     | Webex1One                  | 
 | 3         |   user3@wx1-2026.wbx.ai      |   Webex1One!        |  rattylab+02.a917aabb00d9@agentforce.com    | Webex1One                  |
