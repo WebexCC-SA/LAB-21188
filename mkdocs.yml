@@ -90,9 +90,10 @@ nav:
   - WxCC SCV Lab:
       - Overview: overviewDK.md
       - Prerequisites & Dependencies: preReqDK.md
-      - Integrate WxCC with Salesforce SCV: integrationTasksDK.md
+      - Lab Access: labAccessDK.md
+      - Lab-1 Integrate WxCC with Salesforce SCV: integrationTasksDK.md
       - Validation & Testing: validTestDK.md
-      - Digital Channel Configuration: digitalChanIntegrationDK.md
+      - Lab-2 Digital Channel Configuration: digitalChanIntegrationDK.md
       - Test Chat Functionality: digitalTestDK.md
       - Conclusion: conclusionDK.md
 #  - Old Lab:
