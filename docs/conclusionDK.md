@@ -11,6 +11,7 @@ Additional Info:
 
 - Executing the Omni Flow is essential to apply CRM logic, perform customer matching, and ensure Salesforce routing decisions remain aligned with the telephony call path.
 
-- For advanced configurations and customizations, refer to the [complete integration guide](https://app.tango.us/app/workflow/Integrate-Webex-Contact-Center-With-Salesforce--Service-Cloud-Voice--da86322c26ab41c4890989255e9661d7)
+- For advanced configurations and customizations, refer to the [Webex Hel Center Doc](https://help.webex.com/en-us/article/dvo3zs/Integrate-Webex-Contact-Center-with-Salesforce-Service-Cloud-Voice)
+
 
 ## Thank you for your interest and participation in this lab!
