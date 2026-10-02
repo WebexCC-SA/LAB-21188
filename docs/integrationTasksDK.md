@@ -8,7 +8,7 @@
 
 ---
 
-* Open a Chrome ingonito (private) window and login to Salesforce using pod credentials assigned (see table above)
+* Open a Chrome ingonito (private) window and login to Salesforce using pod credentials assigned.
 
 !!! Important
     Please contact your proctor if prompted for a Salesforce verification code.
@@ -62,12 +62,12 @@
 
 ## Task 04
 
-###<code style="color : green">**Verify that Service Cloud Voice Package is Installed**</code>
+###<code style="color : green">**Verify that WxCC Package for Salesforce Service Cloud Voice Package is Installed**</code>
 
 ---
 
-!!! Note
-    _Review only - SCV package for the WxCC is already isntalled. See below for installation information._
+!!! Important
+    _First verify if the SCV package for the WxCC is already installed. If not, go ahead with the package installation. Please see below for installation information._
     
 * From Setup Quick find box, search and select **installed Packages**
 * Under Installed Packages verify that Webex Contact Center for Service Cloud Voice is listed.
@@ -75,15 +75,18 @@
 ![Nav](./assets/task04_1.png){ width="800" }
 
 
-!!! Reference
-    **How to install the Ciso WxCC for SCV package?**  
+!!! **How to install the Ciso WxCC for SCV package?**  
     
     [Click this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000001HN1FIAW) and follow onscreen instructions to install the package in your environment.  
     ![Nav](./assets/task04_2.png){ width="500" }
 
     Note: _Grant access to 3rd party websites if prompted during installation_
 
+!!! Reference
+    Webex Contact Center SCV Package latest version is also available on [Salesforce AgentExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=10ce532e-1198-4745-b57e-26831a1a518b)
+    
 
+    
 
 ## Task 05
 
@@ -170,7 +173,7 @@
 ---
 
 !!! Reference
-    **How to Find Your Instance ID?**  
+    **How to Find Your Salesforce Instance ID?**  
     
     After logging in, check the URL in your browser's address bar. 
     Your instance ID is the portion before any of these domains:  `.my.salesforce.com`   `.salesforce.com`  or `.lightning.force.com`
@@ -206,7 +209,7 @@
 
 ## Task 09
 
-###<code style="color : green">**Add Omni-Channel to Lightning Service Console (or Custom Lightening page)**</code>
+###<code style="color : green">**Add Omni-Channel to Lightning Service Console (or Custom Lightning page)**</code>
 
 ---
 
@@ -265,17 +268,7 @@
     
     ![Nav](./assets/task11_1.png)
     
-    Open and edit the downloaded WxCCContactCenterSCV.xml file to modify lines 4 and 5 as shown below and save it. 
-
-    Add **LabUserX** (**X** = assigned Pod#) to Display Name (Line 4) and InteralName (Line 5) fields. For example:  
-    ```   
-       <item sortOrder="1" name="reqDisplayName" label="Display Name">Webex Contact Center LabUserX</item>  
-       
-       <item sortOrder="0" name="reqInternalName" label="InternalName">WxCCContactCenterLabuserX</item>
-    ```   
-
-
-
+    
 
 * From Setup Quick find box, search and select **Partner Telephony Contact Centers**
 * The list of the existing (if any) Contact Centers is displayed. Click on the New button on the right side of the page.
@@ -316,6 +309,7 @@
 
 !!! Note
     Before proceeding with the telephony configuration, we must collect several key IDs:  
+    
     - At least one Online (Ready e.g., Available) presence status ID from Salesforce.  
     
     - At least one Busy (Not Ready e.g., Not Ready) presence status ID from Salesforce.  
@@ -331,7 +325,7 @@
      
         - From Setup, Quick Find box  search and select Presence Statuses.  
         - Click the Online status you want to use (e.g., Available)  
-        - Copy the Salesforce ID from the browser URL.  
+        - Copy the Salesforce Status ID from the browser URL.  
     
     Example: If the URL contains address=%2F0N5dM000001WuuX, the ID is 0N5dM000001WuuX (remove %2F)  
     
