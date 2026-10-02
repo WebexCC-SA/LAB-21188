@@ -75,7 +75,8 @@
 ![Nav](./assets/task04_1.png){ width="800" }
 
 
-!!! **How to install the Ciso WxCC for SCV package?**  
+!!! Note
+    **How to install the Ciso WxCC for SCV package?**  
     
     [Click this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000001HN1FIAW) and follow onscreen instructions to install the package in your environment.  
     ![Nav](./assets/task04_2.png){ width="500" }
