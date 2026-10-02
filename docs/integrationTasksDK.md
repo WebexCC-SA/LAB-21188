@@ -76,15 +76,12 @@
 
 
 !!! Note
-    **How to install the Ciso WxCC for SCV package?**  
-    
+    **How to install the Cisco WxCC for SCV package?**  
     [Click this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000001HN1FIAW) and follow onscreen instructions to install the package in your environment.  
     ![Nav](./assets/task04_2.png){ width="500" }
-
-    Note: _Grant access to 3rd party websites if prompted during installation_
-
-!!! Reference
-    Webex Contact Center SCV Package latest version is also available on [Salesforce AgentExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=10ce532e-1198-4745-b57e-26831a1a518b)
+    
+    * Grant access to 3rd party websites if prompted during installation_
+    * Webex Contact Center SCV Package latest version is also available on [Salesforce AgentExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=10ce532e-1198-4745-b57e-26831a1a518b)
     
 
     
