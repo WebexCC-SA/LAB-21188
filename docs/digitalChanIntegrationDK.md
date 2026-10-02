@@ -60,6 +60,7 @@
     - Add your user(s) (ex: agents) to Selected Members
 
 * Click Save.
+
 ![Nav](./assets/digTask02_2.png){ width="800" }
 
 
@@ -84,6 +85,8 @@
     - From Available Channels, add Messaging (or both, Messaging and Phone)
 
 * Click Save.
+
+
 ![Nav](./assets/digTask03_1.png){ width="800" }
 
 
@@ -103,7 +106,7 @@
 ![Nav](./assets/digTask04_1.png){ width="800" }
 
 !!! Note
-    Following steps are optional if not performed in the previous lab Task 07: Assign Presence Status(es) to Agent(s)
+    Following steps are optional if not performed in the previous Lab-1 Task 07: Assign Presence Status(es) to Agent(s)
     
 * Click on Manage Assignments on the same page (screenshot above)
 * Then click Add Assignment on the top right corner, select the desired user.
