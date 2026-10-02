@@ -16,6 +16,44 @@ Please use the PSTN Number assigned to your pod to make the inbound call:
 
 
 
+Please use the following Agent credentials and PSTN number for your assigned pod:
+
+
+
+| `Pod#`    |  `WxCC Agent Username`       | `WxCC Agent Password` |  `PSTN Number Username`   |
+| :-------: | :--------------------------: | :-------------------: | :-----------------------: |
+| 1         |   user1@wx1-2026.wbx.ai      |   Webex1One!          |                           |
+| 2         |   user2@wx1-2026.wbx.ai      |   Webex1One!          |                    | 
+| 3         |   user3@wx1-2026.wbx.ai      |   Webex1One!          |                    |
+| 4         |   user4@wx1-2026.wbx.ai      |   Webex1One!          |                    |
+| 5         |   user5@wx1-2026.wbx.ai      |   Webex1One!          |                    |
+| 6         |   user6@wx1-2026.wbx.ai      |   Webex1One!          |                    |
+| 7         |   user7@wx1-2026.wbx.ai      |   Webex1One!          |                    |
+| 8         |   user8@wx1-2026.wbx.ai      |   Webex1One!          |                    |
+| 9         |   user9@wx1-2026.wbx.ai      |   Webex1One!          |                    |
+| 10        |   user10@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 11        |   user11@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 12        |   user12@wx1-2026.wbx.a      |   Webex1One!          |                    |
+| 13        |   user13@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 14        |   user14@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 15        |   user15@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 16        |   user16@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 17        |   user17@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 18        |   user18@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 19        |   user19@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 20        |   user20@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 21        |   user21@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 22        |   user22@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 23        |   user23@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 24        |   user24@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 25        |   user25@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 26        |   user26@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 27        |   user27@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 28        |   user28@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 29        |   user29@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 30        |   user30@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+
+
 
 
 !!! info
