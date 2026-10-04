@@ -80,7 +80,7 @@
     [Click this link](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tUl000001HN1FIAW) and follow onscreen instructions to install the package in your environment.  
     ![Nav](./assets/task04_2.png){ width="500" }
     
-    * Grant access to 3rd party websites if prompted during installation_
+    * Grant access to 3rd party websites if prompted during installation.
     * Webex Contact Center SCV Package latest version is also available on [Salesforce AgentExchange](https://appexchange.salesforce.com/appxListingDetail?listingId=10ce532e-1198-4745-b57e-26831a1a518b)
     
 
@@ -116,8 +116,8 @@
 ---
 
 * From Setup Quick find box, search and select **Presence Statuses**
-* Click on New button and create at least one status for Online and one for Busy - refer to screenshots below.
-* Click Save button for both statuses.
+* Click on New button and create at least one status for **Online** and one for **Busy** - refer to screenshots below.
+* Click Save button for **both statuses**.
 
 <img width="800" height="500" alt="image" src="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task06_1.png"/>
 <img width="800" height="500" alt="image" src="https://cl-wil.ciscolabs.com/ebf939c4ea/assets/task06_2.png"/>
@@ -235,7 +235,7 @@
 * From Setup Quick find box, search and select **Certificate and Key Management**
 * Click on Create Self-Signed Certificate button
 * Enter a descriptive Label for the certificate.
-* Enter a Unique Name. or use the name that’s automatically populated based on the entered certificate label.
+* Enter a Unique Name or use the name that’s automatically populated based on the entered certificate label.
 * Select a Key Size for your generated certificate and keys. Click Save.
 
 ![Nav](./assets/task10_1.png){ width="800" }  
