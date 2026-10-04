@@ -1,57 +1,42 @@
 # Testing inbound and Outbound calls 
 
 
-
-Please use the PSTN Number assigned to your pod to make the inbound call:
-
-
-
-| Pod#              |  PSTN Number            | Agent username           |  Agent Password  |
-| :---------------: | :---------------------: | :----------------------: | :--------------: |
-| 01                |   978-339-7153          | labuser1@clus26.wbx.ai   | Clus2026!        |
-| 02                |   978-339-7154          | labuser2@clus26.wbx.ai   | Clus2026!        |
-| 03                |   978-339-7155          | labuser3@clus26.wbx.ai   | Clus2026!        |
-| 04                |   978-339-7157          | labuser4@clus26.wbx.ai   | Clus2026!        |
-| 05                |   978-339-7159          | labuser5@clus26.wbx.ai   | Clus2026!        |
-
-
-
 Please use the following Agent credentials and PSTN number for your assigned pod:
 
 
 
 | `Pod#`    |  `WxCC Agent Username`       | `WxCC Agent Password` |  `PSTN Number Username`   |
 | :-------: | :--------------------------: | :-------------------: | :-----------------------: |
-| 1         |   user1@wx1-2026.wbx.ai      |   Webex1One!          |                           |
-| 2         |   user2@wx1-2026.wbx.ai      |   Webex1One!          |                    | 
-| 3         |   user3@wx1-2026.wbx.ai      |   Webex1One!          |                    |
-| 4         |   user4@wx1-2026.wbx.ai      |   Webex1One!          |                    |
-| 5         |   user5@wx1-2026.wbx.ai      |   Webex1One!          |                    |
-| 6         |   user6@wx1-2026.wbx.ai      |   Webex1One!          |                    |
-| 7         |   user7@wx1-2026.wbx.ai      |   Webex1One!          |                    |
-| 8         |   user8@wx1-2026.wbx.ai      |   Webex1One!          |                    |
-| 9         |   user9@wx1-2026.wbx.ai      |   Webex1One!          |                    |
-| 10        |   user10@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 11        |   user11@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 12        |   user12@wx1-2026.wbx.a      |   Webex1One!          |                    |
-| 13        |   user13@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 14        |   user14@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 15        |   user15@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 16        |   user16@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 17        |   user17@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 18        |   user18@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 19        |   user19@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 20        |   user20@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 21        |   user21@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 22        |   user22@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 23        |   user23@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 24        |   user24@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 25        |   user25@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 26        |   user26@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 27        |   user27@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 28        |   user28@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 29        |   user29@wx1-2026.wbx.ai     |   Webex1One!          |                    |
-| 30        |   user30@wx1-2026.wbx.ai     |   Webex1One!          |                    |
+| 1         |   user1@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2015             |
+| 2         |   user2@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2023             | 
+| 3         |   user3@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2046             |
+| 4         |   user4@wx1-2026.wbx.ai      |   Webex1One!          |  774-712=2049             |
+| 5         |   user5@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2050             |
+| 6         |   user6@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2054             |
+| 7         |   user7@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2057             |
+| 8         |   user8@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2058             |
+| 9         |   user9@wx1-2026.wbx.ai      |   Webex1One!          |  774-712-2063             |
+| 10        |   user10@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2064             |
+| 11        |   user11@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2065             |
+| 12        |   user12@wx1-2026.wbx.a      |   Webex1One!          |  774-712-2066             |
+| 13        |   user13@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2067             |
+| 14        |   user14@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2070             |
+| 15        |   user15@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2071             |
+| 16        |   user16@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2098             |
+| 17        |   user17@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2103             |
+| 18        |   user18@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2105             |
+| 19        |   user19@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2114             |
+| 20        |   user20@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2116             |
+| 21        |   user21@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2118             |
+| 22        |   user22@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2121             |
+| 23        |   user23@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2128             |
+| 24        |   user24@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2130             |
+| 25        |   user25@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2131             |
+| 26        |   user26@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2134             |
+| 27        |   user27@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2140             |
+| 28        |   user28@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2143             |
+| 29        |   user29@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2151             |
+| 30        |   user30@wx1-2026.wbx.ai     |   Webex1One!          |  774-712-2153             |
 
 
 
