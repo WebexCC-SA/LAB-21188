@@ -87,6 +87,7 @@ markdown_extensions:
 nav:
   - Home: index.md
   # - Welcome: welcome.md
+  - Lab Access: labAccessDK.md
   - WxCC SCV Lab:
       - Overview: overviewDK.md
       - Prerequisites & Dependencies: preReqDK.md
