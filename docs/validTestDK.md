@@ -48,7 +48,7 @@ Please use the following Agent credentials and PSTN number for your assigned pod
 
 ### Log into Salesforce 
 
-Open a new Chrome window and [log in to Salesforce](https://login.salesforce.com/) using credentials provided.
+If not already logged in, open a new Chrome window and [log in to Salesforce](https://login.salesforce.com/) using your pod credentials provided.
 
 ![Nav](./assets/valid1.png){ width="300" }
 
